@@ -20,16 +20,12 @@ import org.springframework.web.client.support.RestGatewaySupport
 
 @ExtendWith(SpringExtension::class)
 @ContextConfiguration(classes = [FurnitureConfiguration::class, ExternalClient::class])
-open class ExternalClientTest(
+open class ExternalClientTest @Autowired constructor(
+    private val restTemplate: RestTemplate,
+    private val externalClient: ExternalClient
 ) {
 
     private lateinit var mockServer: MockRestServiceServer
-
-    @Autowired
-    private lateinit var restTemplate: RestTemplate
-
-    @Autowired
-    private lateinit var externalClient: ExternalClient
 
     @BeforeEach
     fun setup() {

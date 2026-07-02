@@ -12,10 +12,9 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.transaction.annotation.Transactional
 
 @SpringBootTest
-internal open class ChairServiceTest {
-
-    @Autowired
-    lateinit var chairService: ChairService
+internal open class ChairServiceTest @Autowired constructor(
+    private val chairService: ChairService
+) {
 
     @BeforeEach
     fun setUp() {

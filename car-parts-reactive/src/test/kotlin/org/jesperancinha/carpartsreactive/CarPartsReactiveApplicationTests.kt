@@ -29,7 +29,9 @@ class CarPartsReactiveApplicationTests {
 }
 
 @SpringJUnitConfig(classes = [PostControllerTest.TestConfig::class])
-class PostControllerTest {
+class PostControllerTest @Autowired constructor(
+    private val carPartRepository: CarPartRepository
+) {
     @Configuration(proxyBeanMethods = false)
     @ComponentScan(basePackageClasses = [CarController::class])
     internal class TestConfig {
@@ -41,9 +43,6 @@ class PostControllerTest {
         @Primary
         fun String.postRepository(): CarPartRepository = println(this).run{ mockk<CarPartRepository>() }
     }
-
-    @Autowired
-    lateinit var carPartRepository: CarPartRepository
 
     private lateinit var client: WebTestClient
 

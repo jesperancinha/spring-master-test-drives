@@ -12,12 +12,12 @@ import org.springframework.test.context.ContextConfiguration
 @SpringBootTest
 @AutoConfigureWebTestClient
 @ContextConfiguration(classes = [(Service::class)])
-class HelloMockkTest : StringSpec() {
+class HelloMockkTest(
+    @MockkBean
+    private val service: Service
+) : StringSpec() {
 
     override fun extensions() = listOf(SpringExtension)
-
-    @MockkBean
-    lateinit var service: Service
 
     init {
         "should have autowired the service" {

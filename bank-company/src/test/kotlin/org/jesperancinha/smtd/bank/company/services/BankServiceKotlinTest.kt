@@ -22,12 +22,10 @@ class BankServiceKotlinTest @Autowired constructor(
     private val bankService: BankService,
     @Lazy
     @Autowired
-    private val bank: Bank
-
-) {
+    private val bank: Bank,
     @MockkBean
-    lateinit var bankCompanyBankRepository: BankCompanyBankRepository
-
+    private val bankCompanyBankRepository: BankCompanyBankRepository
+) {
     @BeforeEach
     fun setup() {
         ConsolerizerComposer.outSpace().magenta("We just started our unit test").reset()
