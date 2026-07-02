@@ -143,7 +143,46 @@ public class Flash17ConfigurationAdapter {
 
 If you find unused imports, please remove them. This is a good practice to keep the code clean and maintainable.
 
-## 4. Test class checklist
+## 4. Migrate `@MockBean` annotations
+
+The annotation `@MockBean` is deprecated and its usage needs to be replaced by `@MockitoBean`
+
+### Example 1
+
+On a class level, replace this:
+
+```java
+@MockBean(Planet.class)
+private MyService myService;
+```  
+with this:
+
+```java
+@MockitoBean(types = Planet.class)
+private MyService myService;
+```
+
+### Example 2
+
+Replace also the usages of `import org.springframework.boot.test.mock.mockito.MockBean;` with `import org.springframework.test.context.bean.override.mockito.MockitoBean;`
+
+
+### Example 3
+The beans that are declared like this:
+
+```java
+@MockBean
+private BankCompanyBankRepository bankCompanyBankRepository;
+```
+
+should be replaced to something like:
+
+```java
+@MockitoBean
+private BankCompanyBankRepository bankCompanyBankRepository;
+```
+
+## 5. Test class checklist
 
 Before submitting/reviewing an integration test class, confirm:
 
