@@ -1,5 +1,5 @@
 ---
-name: spring-integration-test-wiring
+name: generic
 description: Conventions for dependency injection and mocking in Spring Boot integration tests in this project. Use this whenever writing, reviewing, or refactoring integration test classes (anything annotated @SpringBootTest, or under src/test that talks to a real Spring context), especially when deciding how to wire dependencies or mock collaborators. Also consult this before adding @Autowired, @MockBean, @MockitoBean, or field injection in any test class.
 ---
 
@@ -168,7 +168,7 @@ Replace also the usages of `import org.springframework.boot.test.mock.mockito.Mo
 
 
 ### Example 3
-The beans that are declared like this:
+The beans that are declared are like this:
 
 ```java
 @MockBean

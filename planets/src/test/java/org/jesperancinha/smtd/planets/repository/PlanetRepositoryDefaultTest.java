@@ -5,7 +5,7 @@ import org.jesperancinha.smtd.planets.dto.Planet;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
-@MockBean(Planet.class)
+@MockitoBean(types = Planet.class)
 public class PlanetRepositoryDefaultTest {
 
     @Autowired
