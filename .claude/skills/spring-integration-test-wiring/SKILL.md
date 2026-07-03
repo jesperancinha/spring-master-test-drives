@@ -20,8 +20,8 @@ files should be affected.
 ```kotlin
 @SpringBootTest
 class JeorgActionAOPLauncherExtAOPTest @Autowired constructor(
-    private val bonitoCatcher: BonitoCatcher,
-    private val codCatcher: CodCatcher
+  private val bonitoCatcher: BonitoCatcher,
+  private val codCatcher: CodCatcher
 ) {
 }
 ```
