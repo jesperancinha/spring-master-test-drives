@@ -1,5 +1,5 @@
 ---
-name: generic
+name: spring-integration-test-wiring
 description: Conventions for dependency injection and mocking in Spring Boot integration tests in this project. Use this whenever writing, reviewing, or refactoring integration test classes (anything annotated @SpringBootTest, or under src/test that talks to a real Spring context), especially when deciding how to wire dependencies or mock collaborators. Also consult this before adding @Autowired, @MockBean, @MockitoBean, or field injection in any test class.
 ---
 
@@ -143,7 +143,38 @@ public class Flash17ConfigurationAdapter {
 
 If you find unused imports, please remove them. This is a good practice to keep the code clean and maintainable.
 
-## 4. Migrate `@MockBean` annotations
+## 4. Replace initMocks with OpenMocks
+
+### Example 1
+
+When finding this:
+
+```kotlin
+initMocks(testRestTemplate)
+```
+
+Replace with:
+
+```kotlin
+openMocks(testRestTemplate)
+```
+
+Also replace imports from `import org.mockito.MockitoAnnotations.initMocks` to `import org.mockito.MockitoAnnotations.openMocks`
+
+## 5 When using Kotlin code make sure to use the kotlin extensions for parsing
+
+### Example 1
+
+When finding this:
+
+```kotlin
+    .getForEntity<String>("/tulips")
+```
+replace with:
+```kotlin
+    .getForEntity("/tulips", String::class.java)
+```
+## 6. Migrate `@MockBean` annotations
 
 The annotation `@MockBean` is deprecated and its usage needs to be replaced by `@MockitoBean`
 
@@ -182,7 +213,7 @@ should be replaced to something like:
 private BankCompanyBankRepository bankCompanyBankRepository;
 ```
 
-## 5. Test class checklist
+## 7. Test class checklist
 
 Before submitting/reviewing an integration test class, confirm:
 
