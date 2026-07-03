@@ -13,9 +13,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension
 @ExtendWith(SpringExtension::class)
 @ContextConfiguration(classes = [ChairProfileConfiguration::class])
 @ActiveProfiles("big","small")
-class ChairAllProfilesTest(
-    @Autowired(required = false)
-    val chairBigSmall:Chair?
+class ChairAllProfilesTest @Autowired(required = false) constructor(
+    private val chairBigSmall: Chair?
 ) {
 
     @Test

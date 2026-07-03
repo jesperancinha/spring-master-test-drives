@@ -19,11 +19,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension
         ContextConfiguration(classes = [ChairConfigurationTest::class]),
         ContextConfiguration(classes = [CaseConfigurationTest::class])],
 )
-open class ChairRepositoryTest(
-    @Autowired
-    val chairList: MutableList<Chair>,
-    @Autowired
-    val caseList: MutableList<Case>,
+open class ChairRepositoryTest @Autowired constructor(
+    private val chairList: MutableList<Chair>,
+    private val caseList: MutableList<Case>,
 ) {
 
     @Test

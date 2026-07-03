@@ -18,8 +18,7 @@ import javax.sql.DataSource
     replace = AutoConfigureTestDatabase.Replace.AUTO_CONFIGURED,
     connection = EmbeddedDatabaseConnection.HSQLDB
 )
-class PlanetRepositoryHSQLKotlinTest(
-    @Autowired
+class PlanetRepositoryHSQLKotlinTest @Autowired constructor(
     private val dataSource: DataSource
 ) {
     @Test

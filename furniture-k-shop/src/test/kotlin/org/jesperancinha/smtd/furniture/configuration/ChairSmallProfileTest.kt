@@ -14,10 +14,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension
 @ExtendWith(SpringExtension::class)
 @ContextConfiguration(classes = [ChairProfileConfiguration::class])
 @ActiveProfiles("small")
-open class ChairSmallProfileTest
-constructor(@Autowired(required = false) chairBigSmally: Chair?) {
-
-    private val chairBigSmall = chairBigSmally
+open class ChairSmallProfileTest @Autowired(required = false) constructor(
+    private val chairBigSmall: Chair?
+) {
 
     @Test
     fun testBeanExistsWhenProfileBigAndSmallThenNull() {

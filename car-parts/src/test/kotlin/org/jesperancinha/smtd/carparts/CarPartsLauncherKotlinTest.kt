@@ -13,8 +13,7 @@ import org.springframework.context.annotation.Import
 @Import(
     PartWebSecurity::class
 )
-class CarPartsLauncherKotlinTest(
-    @Autowired
+class CarPartsLauncherKotlinTest @Autowired constructor(
     private val partController: PartController
 ) {
 

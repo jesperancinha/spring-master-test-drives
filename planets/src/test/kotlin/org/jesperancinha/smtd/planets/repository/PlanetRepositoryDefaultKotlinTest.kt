@@ -12,8 +12,7 @@ import javax.sql.DataSource
 
 @DataJpaTest
 @MockkBean(Planet::class)
-class PlanetRepositoryDefaultKotlinTest(
-    @Autowired
+class PlanetRepositoryDefaultKotlinTest @Autowired constructor(
     private val dataSource: DataSource
 ) {
 

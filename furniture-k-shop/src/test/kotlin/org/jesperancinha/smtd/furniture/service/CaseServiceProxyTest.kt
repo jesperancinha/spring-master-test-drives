@@ -9,9 +9,8 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT
 
 @SpringBootTest(webEnvironment = RANDOM_PORT)
-open class CaseServiceProxyTest(
-    @Autowired
-    val caseService: CaseService
+open class CaseServiceProxyTest @Autowired constructor(
+    private val caseService: CaseService
 ) {
 
     @Test
