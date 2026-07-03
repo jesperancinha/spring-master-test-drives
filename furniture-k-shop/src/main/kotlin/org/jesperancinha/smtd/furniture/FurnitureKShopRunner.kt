@@ -16,9 +16,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 @EnableTransactionManagement
 open class FurnitureKShopRunner(
-    @Value("\${management.endpoints.web.exposure.include}")
+    @param:Value($$"${management.endpoints.web.exposure.include}")
     val healthOrder: String,
-    @Autowired
+    @param:Autowired
     val healthProperties: HealthProperties
 ) : ApplicationRunner {
     override fun run(args: ApplicationArguments?) {

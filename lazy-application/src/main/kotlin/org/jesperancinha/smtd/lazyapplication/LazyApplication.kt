@@ -31,7 +31,7 @@ class LazyApplication
 
 
 @RestController
-class TestController(@Autowired val lazyBean: ThisIsLoaded) {
+class TestController(@param:Autowired val lazyBean: ThisIsLoaded) {
     @GetMapping("/trigger")
     fun triggerLazyBean(): ThisIsLoaded = lazyBean
 }
@@ -39,7 +39,7 @@ class TestController(@Autowired val lazyBean: ThisIsLoaded) {
 
 @RestController
 class TestControllerEager {
-    @Autowired
+    @field:Autowired
     private val eagerBean: ThisIsLoaded? = null
 
     @GetMapping("/triggereager")

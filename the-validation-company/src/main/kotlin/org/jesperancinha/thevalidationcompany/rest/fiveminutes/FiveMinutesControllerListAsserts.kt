@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("5minutes")
 class FiveMinutesControllerListAsserts {
 
-    @Autowired
+    @field:Autowired
     lateinit var validator: Validator
 
     @PostMapping("lists")

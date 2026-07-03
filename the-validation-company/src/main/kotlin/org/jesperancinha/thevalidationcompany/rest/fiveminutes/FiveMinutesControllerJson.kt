@@ -15,15 +15,15 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("5minutes")
 class FiveMinutesControllerJson {
 
-    @Autowired
+    @field:Autowired
     lateinit var validator: Validator
 
     @PostMapping("asserts/json")
-    fun postRequestJson(@RequestBody @Valid accountAssertsJsonDto: AccountAssertsJsonDto) =
+    fun postRequestJson(@RequestBody @Valid accountAssertsJsonDto: AccountAssertsJsonDto): ResponseEntity<AccountAssertsJsonDto?> =
         ResponseEntity.ok(accountAssertsJsonDto)
 
     @PostMapping("asserts/json/programmatic")
-    fun postRequestProgrammaticJson(@RequestBody accountAssertsJsonDto: AccountAssertsJsonDto) =
+    fun postRequestProgrammaticJson(@RequestBody accountAssertsJsonDto: AccountAssertsJsonDto): ResponseEntity<*> =
         run {
             val violations = validator.validate(accountAssertsJsonDto)
             violations

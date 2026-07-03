@@ -27,7 +27,7 @@ class BankCompanyLauncherKotlinTest @Autowired constructor(
     /**
      * Properties and environment variables
      */
-    @Value("\${environment}")
+    @param:Value($$"${environment}")
     private val environment: String,
     private val beanFactory: BeanFactory,
     private val defaultListableBeanFactory: DefaultListableBeanFactory,

@@ -15,19 +15,19 @@ class BankCompanyLauncherOtherPropertiesKotlinTest {
     /**
      * Properties and environment variables
      */
-    @Value("\${environment}")
+    @field:Value($$"${environment}")
     private lateinit var environment: String
 
-    @Value("\${jeorg.bank.banking}")
+    @field:Value($$"${jeorg.bank.banking}")
     private lateinit var banking: String
 
-    @Value("\${jeorg.bank.customer}")
+    @field:Value($$"${jeorg.bank.customer}")
     private lateinit var customer: String
 
-    @Value("\${jeorg.bank.sa.name}")
+    @field:Value($$"${jeorg.bank.sa.name}")
     private lateinit var name: String
 
-    @Value("\${jeorg.bank.sa.surname}")
+    @field:Value($$"${jeorg.bank.sa.surname}")
     private lateinit var surname: String
     @Test
     fun contextLoads() {

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("number")
 class NumberController {
 
-    @Autowired
+    @field:Autowired
     lateinit var validator: Validator
 
     @GetMapping("info")
