@@ -13,7 +13,7 @@
 
     <description>An implementation of a Testcontainer based on Port</description>
 
-    <name>JEORG-SMTD :: Docker boxing Port</name>
+    <name>Spring Test Drive :: Docker boxing Port</name>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

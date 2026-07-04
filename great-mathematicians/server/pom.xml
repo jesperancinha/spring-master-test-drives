@@ -12,7 +12,7 @@
 
     <artifactId>server</artifactId>
 
-    <name>JEORG-SMTD :: GM Service</name>
+    <name>Spring Test Drive :: GM Service</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

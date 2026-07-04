@@ -1,4 +1,4 @@
-# JEORG-SMTD :: GM Client
+# Spring Test Drive :: GM Client
 
 ## About me
 

@@ -10,7 +10,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <name>JEORG-SMTD :: GM Client</name>
+    <name>Spring Test Drive :: GM Client</name>
 
     <artifactId>client</artifactId>
 
