@@ -108,6 +108,19 @@ gu install native-image
 `Cassandra support`, `Transaction under Transaction`, `Health indicators`, `packaging`
 `containers`, `tomcat`, `jetty`
 
+---
+
+## Claude
+
+Prompt claude with the following:
+
+### Run all skills
+```text
+please run skills annotations, kotlin, angular, parallel, docker, and spring-integration-test-wiring on this project
+```
+
+---
+
 ## References
 
 ### Books
