@@ -56,7 +56,7 @@ class BankCompanyLauncherOtherPropertiesKotlinTest {
 ```
 
 The same should be applied to annotation `@Autowired`, but only for non-test classes and only in Kotlin files.
-The same should be applied to annotation `@JsonProperty`, `@JsonDeserialize`, `@JsonAlias`, `LocalServerPort`, but only in Kotlin files.
+The same should be applied to annotation `@JsonProperty`, `@JsonDeserialize`, `@JsonAlias`, `@LocalServerPort`, but only in Kotlin files.
 Do not add `@Autowired`, or any form of it with a different target to any parameter. `@Autowired` usage should be removed from production code instead.
 
 ## 3. Checklist
