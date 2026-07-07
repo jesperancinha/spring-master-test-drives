@@ -36,3 +36,23 @@ delay(100.milliseconds)
 
 Add import: `import kotlin.time.Duration.Companion.milliseconds`
 
+## 5. Remove all code signatures
+
+Code does not need to be signed. The code signature used to have some value, but in current times, the commit already has a signature.
+Old code may contain signatures that look like this:
+
+```kotlin
+/**
+ * Created by joao on 28-4-16.
+ */
+```
+
+They should all be removed, as they are not needed and add no value to the code.
+
+## 6. Checklist
+
+[ ] The code does not use the `!!` operator.
+[ ] The code does not use the safe call operator (`?.`) when the value is guaranteed to be non-null.
+[ ] The code uses `val` instead of `var` whenever possible.
+[ ] The code uses the `Duration` overload when using the `delay` function.
+[ ] The code does not contain any code signatures.
