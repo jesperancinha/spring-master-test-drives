@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment
 import org.springframework.boot.test.web.client.TestRestTemplate
+import org.springframework.boot.test.web.client.postForEntity
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class PartControllerKotlinIT @Autowired constructor(
@@ -16,7 +17,7 @@ class PartControllerKotlinIT @Autowired constructor(
     @Test
     fun testPostNewPartWhenSendingNoTimeoutReturnGoodOk() {
         val engine = Part.builder().name("Engine").build()
-        val partResponseEntity = testRestTemplate.postForEntity("/parts", engine, Part::class.java)
+        val partResponseEntity = testRestTemplate.postForEntity<Part>("/parts", engine)
         partResponseEntity.shouldNotBeNull()
         partResponseEntity.body.shouldBeNull()
     }

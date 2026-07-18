@@ -7,6 +7,8 @@ import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.parallel.Execution
+import org.junit.jupiter.api.parallel.ExecutionMode.SAME_THREAD
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.security.concurrent.DelegatingSecurityContextExecutorService
 import org.springframework.security.core.context.SecurityContextHolder
@@ -16,6 +18,7 @@ import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicReference
 
 @SpringBootTest
+@Execution(SAME_THREAD)
 internal class BCModeModeGlobalSecurityKotlinTest {
     @BeforeEach
     fun setup() {

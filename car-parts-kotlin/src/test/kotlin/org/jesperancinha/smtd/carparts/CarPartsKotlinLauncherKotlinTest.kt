@@ -10,6 +10,8 @@ import org.jesperancinha.smtd.carparts.controller.PartController
 import org.jesperancinha.smtd.carparts.model.jpa.Part
 import org.jesperancinha.smtd.carparts.repos.PartRepository
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.parallel.Execution
+import org.junit.jupiter.api.parallel.ExecutionMode.SAME_THREAD
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment
@@ -18,6 +20,7 @@ import kotlin.reflect.full.declaredMemberProperties
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @Sql("classpath:schema.sql", "classpath:data.sql")
+@Execution(SAME_THREAD)
 class CarPartsKotlinLauncherKotlinTest @Autowired constructor(
     val partController: PartController,
     val partRepository: PartRepository

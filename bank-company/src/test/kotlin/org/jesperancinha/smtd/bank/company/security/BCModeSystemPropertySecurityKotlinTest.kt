@@ -8,10 +8,13 @@ import org.jesperancinha.console.consolerizer.console.ConsolerizerComposer
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.parallel.Execution
+import org.junit.jupiter.api.parallel.ExecutionMode.SAME_THREAD
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.security.core.context.SecurityContextHolder
 
 @SpringBootTest
+@Execution(SAME_THREAD)
 internal class BCModeSystemPropertySecurityKotlinTest {
     @Test
     fun `should load context`() {

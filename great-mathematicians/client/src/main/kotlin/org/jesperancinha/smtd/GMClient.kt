@@ -50,7 +50,7 @@ class GMClient {
         }
     }
 
-    var randomUserTypePicker: Random = Random()
+    val randomUserTypePicker: Random = Random()
     private fun randomUserTypePicker(lowNumberOfValues: List<String>): String {
         return lowNumberOfValues[randomUserTypePicker.nextInt(2)]
     }

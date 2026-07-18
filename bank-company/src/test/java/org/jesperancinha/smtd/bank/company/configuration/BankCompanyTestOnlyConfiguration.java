@@ -17,9 +17,9 @@ import org.springframework.boot.test.context.TestConfiguration;
 public class BankCompanyTestOnlyConfiguration {
 
     @Value("${jeorg.bank.testing:fail}")
-    public String value;
+    private String value;
 
     @Value("${info.app.name:fail}")
-    public String appName;
+    private String appName;
 
 }

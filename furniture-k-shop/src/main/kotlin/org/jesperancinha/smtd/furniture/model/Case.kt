@@ -17,8 +17,8 @@ data class Case(
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     val id: Long?,
-    var designation: String?,
-    var weight: Long?
+    val designation: String?,
+    val weight: Long?
 ) {
     constructor() : this(0L, null, null)
 

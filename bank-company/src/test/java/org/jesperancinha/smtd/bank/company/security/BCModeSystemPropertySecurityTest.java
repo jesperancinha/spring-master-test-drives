@@ -4,15 +4,18 @@ import org.jesperancinha.console.consolerizer.console.ConsolerizerComposer;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.jesperancinha.smtd.bank.company.security.BCModeTestUtils.initializationCount;
+import static org.junit.jupiter.api.parallel.ExecutionMode.SAME_THREAD;
 import static org.springframework.security.core.context.SecurityContextHolder.MODE_GLOBAL;
 import static org.springframework.security.core.context.SecurityContextHolder.SYSTEM_PROPERTY;
 
 @SpringBootTest
+@Execution(SAME_THREAD)
 class BCModeSystemPropertySecurityTest {
 
     static {

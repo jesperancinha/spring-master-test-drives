@@ -1,9 +1,9 @@
 package org.jesperancinha.smtd.furniture.dto
 
 data class ChairDto(
-    var id: Long,
-    var designation: String?,
-    var weight: Long?
+    val id: Long,
+    val designation: String?,
+    val weight: Long?
 ) {
     constructor() : this(0L, null, null)
 }

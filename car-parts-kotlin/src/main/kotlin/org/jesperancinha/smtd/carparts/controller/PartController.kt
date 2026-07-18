@@ -13,6 +13,6 @@ class PartController(private val partServiceTimeout: PartServiceTimeout) {
     fun postNewPart(
         @RequestBody part: Part?
     ) {
-        partServiceTimeout.createPart(part!!)
+        part?.let { partServiceTimeout.createPart(it) }
     }
 }

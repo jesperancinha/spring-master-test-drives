@@ -3,7 +3,6 @@ package org.jesperancinha.repeateddislikes.badfix.domain
 
 import jakarta.persistence.*
 import java.util.UUID
-import kotlin.random.Random
 
 const val SCHEMA_BAD = "BADFIX"
 

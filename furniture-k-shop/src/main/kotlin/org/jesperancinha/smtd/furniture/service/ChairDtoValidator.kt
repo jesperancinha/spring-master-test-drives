@@ -4,9 +4,6 @@ import org.jesperancinha.smtd.furniture.dto.ChairDto
 import org.springframework.validation.Errors
 import org.springframework.validation.Validator
 
-/**
- * Created by jofisaes on 03/06/2021
- */
 class ChairDtoValidator: Validator {
     override fun supports(p0: Class<*>): Boolean {
        return ChairDto::class.java == p0;

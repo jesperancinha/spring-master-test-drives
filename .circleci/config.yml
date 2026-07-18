@@ -29,14 +29,14 @@ jobs:
             mkdir -p $DOCKER_CONFIG/cli-plugins &&
             curl -SL https://github.com/docker/compose/releases/download/$DOCKER_COMPOSE_VERSION/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose &&
             chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose &&
-            docker-compose -v
+            docker compose -v
 
       - run:
           name: Build
           command: ls -l &&
             ls /opt/jdk21 &&
             export JAVA_HOME=/opt/jdk21 &&
-            docker-compose -v &&
+            docker compose -v &&
             export PATH=$JAVA_HOME/bin:$PATH &&
             java -version &&
             mvn clean install -DskipTests

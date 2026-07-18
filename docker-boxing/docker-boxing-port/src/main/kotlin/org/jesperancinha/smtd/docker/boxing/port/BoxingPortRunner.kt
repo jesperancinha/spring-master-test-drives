@@ -10,9 +10,6 @@ import java.time.LocalDateTime
 import java.time.temporal.ChronoUnit
 import java.util.concurrent.TimeUnit
 
-/**
- * Created by jofisaes on 31/03/2022
- */
 @SpringBootApplication
 class BoxingPortRunner : ApplicationRunner {
     companion object {

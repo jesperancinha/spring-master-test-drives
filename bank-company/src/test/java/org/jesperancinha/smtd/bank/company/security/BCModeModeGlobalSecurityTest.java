@@ -3,6 +3,7 @@ package org.jesperancinha.smtd.bank.company.security;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.concurrent.DelegatingSecurityContextExecutorService;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -15,9 +16,11 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.jesperancinha.smtd.bank.company.security.BCModeTestUtils.*;
+import static org.junit.jupiter.api.parallel.ExecutionMode.SAME_THREAD;
 import static org.springframework.security.core.context.SecurityContextHolder.MODE_GLOBAL;
 
 @SpringBootTest
+@Execution(SAME_THREAD)
 class BCModeModeGlobalSecurityTest {
 
     @BeforeEach

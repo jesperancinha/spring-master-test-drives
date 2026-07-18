@@ -32,9 +32,10 @@ class KFunctionTest {
         kFunction.isAccessible = true
         println("Function name: ${kFunction.name}")
         println("Parameters: ${kFunction.parameters.map { it.name to it.type }}")
-        val instanceParam = kFunction.instanceParameter!!
-        val parameters = mapOf(instanceParam to config)
-        val service = kFunction.callBy(parameters) as MyService
-        println(service.greet())
+        kFunction.instanceParameter?.let { instanceParam ->
+            val parameters = mapOf(instanceParam to config)
+            val service = kFunction.callBy(parameters) as MyService
+            println(service.greet())
+        }
     }
 }

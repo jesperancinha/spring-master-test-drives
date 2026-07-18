@@ -7,9 +7,9 @@ import jakarta.persistence.*
 data class Chair(
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    var id: Long,
-    var designation: String?,
-    var weight: Long?
+    val id: Long,
+    val designation: String?,
+    val weight: Long?
 ) {
     constructor() : this(0L, null, null)
 }

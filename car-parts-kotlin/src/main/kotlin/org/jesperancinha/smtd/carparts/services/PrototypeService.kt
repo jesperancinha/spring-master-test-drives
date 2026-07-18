@@ -1,6 +1,5 @@
 package org.jesperancinha.smtd.carparts.services
 
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Scope
 import org.springframework.stereotype.Component
 import java.util.*
@@ -14,14 +13,14 @@ class PrototypeBean {
 
 @Component
 @Scope("singleton")
-class SingletonBean @Autowired constructor(private val prototypeBean: PrototypeBean) {
+class SingletonBean(private val prototypeBean: PrototypeBean) {
     val prototypeId: String?
         get() = prototypeBean.id
 }
 
 @Component
 @Scope("singleton")
-class SingletonBean2 @Autowired constructor(private val prototypeBean: PrototypeBean) {
+class SingletonBean2(private val prototypeBean: PrototypeBean) {
     val prototypeId: String?
         get() = prototypeBean.id
 }
