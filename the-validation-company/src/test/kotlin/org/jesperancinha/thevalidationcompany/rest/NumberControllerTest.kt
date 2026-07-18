@@ -15,7 +15,7 @@ import java.math.BigDecimal
 @SpringBootTest
 @AutoConfigureMockMvc
 class NumberControllerTest @Autowired constructor(
-    val mockMvc: MockMvc
+    private val mockMvc: MockMvc
 ) {
 
     val objectMapper by lazy { ObjectMapper() }

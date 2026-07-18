@@ -21,7 +21,7 @@ open class FurnitureKShopRunner(
     @param:Autowired
     val healthProperties: HealthProperties
 ) : ApplicationRunner {
-    override fun run(args: ApplicationArguments?) {
+    override fun run(args: ApplicationArguments) {
         ConsolerizerComposer.outSpace()
             .black()
             .bgCyan(healthOrder)

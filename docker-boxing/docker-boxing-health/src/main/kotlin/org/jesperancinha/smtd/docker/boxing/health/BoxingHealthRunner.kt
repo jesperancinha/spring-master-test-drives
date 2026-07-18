@@ -27,7 +27,7 @@ class BoxingHealthRunner : ApplicationRunner {
         val startup = LocalDateTime.now()
     }
 
-    override fun run(args: ApplicationArguments?) {
+    override fun run(args: ApplicationArguments) {
         logger.info("Service started -> ${LocalDateTime.now()}")
         logger.info("Time Elapsed -> ${ChronoUnit.MILLIS.between(startup, LocalDateTime.now())} ms")
     }

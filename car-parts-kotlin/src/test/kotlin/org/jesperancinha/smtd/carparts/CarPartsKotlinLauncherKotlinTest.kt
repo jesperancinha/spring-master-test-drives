@@ -22,8 +22,8 @@ import kotlin.reflect.full.declaredMemberProperties
 @Sql("classpath:schema.sql", "classpath:data.sql")
 @Execution(SAME_THREAD)
 class CarPartsKotlinLauncherKotlinTest @Autowired constructor(
-    val partController: PartController,
-    val partRepository: PartRepository
+    private val partController: PartController,
+    private val partRepository: PartRepository
 ) {
 
     @Test

@@ -18,7 +18,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 @SpringBootTest
 @AutoConfigureMockMvc
 class FiveMinutesControllerPayloadTest @Autowired constructor(
-    val mockMvc: MockMvc
+    private val mockMvc: MockMvc
 ) {
 
     val objectMapper by lazy { ObjectMapper() }

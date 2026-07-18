@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement
 @EnableJpaRepositories
 @SpringBootApplication
 class CarPartsKotlinLauncher(val singletonBean: SingletonBean, val singletonBean2: SingletonBean2) : ApplicationRunner {
-    override fun run(args: ApplicationArguments?) {
+    override fun run(args: ApplicationArguments) {
        println(singletonBean.prototypeId)
        println(singletonBean2.prototypeId)
     }

@@ -25,7 +25,7 @@ open class CaseServiceAspectJTest @Autowired constructor(
     @Test
     open fun insertCaseStartNonTransactional() {
         val case = Case(
-            id = -1L,
+            id = null,
             designation = "Book case 2",
             weight = 230
         )

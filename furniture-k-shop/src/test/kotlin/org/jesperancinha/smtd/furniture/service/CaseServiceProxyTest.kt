@@ -21,7 +21,7 @@ open class CaseServiceProxyTest @Autowired constructor(
         try {
             caseService.insertCaseStartOneTransactional(
                 Case(
-                    id = 100L,
+                    id = null,
                     designation = "Book case",
                     weight = 230
                 )
