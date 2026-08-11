@@ -8,7 +8,7 @@ Study of a reactive application using Kotlin Coroutines
 
 
 ```shell
-git clone https://github.com/jesperancinha/jeorg-spring-master-test-drives.git
+git clone https://github.com/jesperancinha/spring-master-test-drives.git
 cd car-parts-reactive
 make b
 make run

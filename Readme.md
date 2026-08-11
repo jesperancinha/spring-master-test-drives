@@ -3,24 +3,24 @@
 ---
 
 
-[![Generic badge](https://img.shields.io/static/v1.svg?label=GitHub&message=Spring%20Master%20Test%20Drives&color=informational)](https://github.com/jesperancinha/jeorg-spring-master-test-drives)
+[![Generic badge](https://img.shields.io/static/v1.svg?label=GitHub&message=Spring%20Master%20Test%20Drives&color=informational)](https://github.com/jesperancinha/spring-master-test-drives)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
 
-[![CircleCI](https://circleci.com/gh/jesperancinha/spring-master-test-drives.svg?style=svg)](https://circleci.com/gh/jesperancinha/jeorg-spring-master-test-drives)
-[![Build status](https://ci.appveyor.com/api/projects/status/wksvhmqaq0sd8505?svg=true)](https://ci.appveyor.com/project/jesperancinha/jeorg-spring-master-test-drives)
+[![CircleCI](https://circleci.com/gh/jesperancinha/spring-master-test-drives.svg?style=svg)](https://circleci.com/gh/jesperancinha/spring-master-test-drives)
+[![Build status](https://ci.appveyor.com/api/projects/status/wksvhmqaq0sd8505?svg=true)](https://ci.appveyor.com/project/jesperancinha/spring-master-test-drives)
 
 [![spring-master-test-drives](https://github.com/jesperancinha/spring-master-test-drives/actions/workflows/flow-master-test-drives.yml/badge.svg)](https://github.com/jesperancinha/spring-master-test-drives/actions/workflows/flow-master-test-drives.yml)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/db288a3f092a49fbb60d54ad963a47ed)](https://www.codacy.com/gh/jesperancinha/jeorg-spring-master-test-drives/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/jeorg-spring-master-test-drives&amp;utm_campaign=Badge_Grade)
-[![Known Vulnerabilities](https://snyk.io/test/github/jesperancinha/jeorg-spring-master-test-drives/badge.svg)](https://snyk.io/test/github/jesperancinha/jeorg-spring-master-test-drives)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/db288a3f092a49fbb60d54ad963a47ed)](https://www.codacy.com/gh/jesperancinha/spring-master-test-drives/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/spring-master-test-drives&amp;utm_campaign=Badge_Grade)
+[![Known Vulnerabilities](https://snyk.io/test/github/jesperancinha/spring-master-test-drives/badge.svg)](https://snyk.io/test/github/jesperancinha/spring-master-test-drives)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/db288a3f092a49fbb60d54ad963a47ed)](https://www.codacy.com/gh/jesperancinha/jeorg-spring-master-test-drives/dashboard?utm_source=github.com&utm_medium=referral&utm_content=jesperancinha/jeorg-spring-master-test-drives&utm_campaign=Badge_Coverage)
-[![Coverage Status](https://coveralls.io/repos/github/jesperancinha/jeorg-spring-master-test-drives/badge.svg?branch=main)](https://coveralls.io/github/jesperancinha/jeorg-spring-master-test-drives?branch=master)
-[![codecov](https://codecov.io/gh/jesperancinha/jeorg-spring-master-test-drives/branch/main/graph/badge.svg?token=2Eh0Oh5ro2)](https://codecov.io/gh/jesperancinha/jeorg-spring-master-test-drives)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/db288a3f092a49fbb60d54ad963a47ed)](https://www.codacy.com/gh/jesperancinha/spring-master-test-drives/dashboard?utm_source=github.com&utm_medium=referral&utm_content=jesperancinha/spring-master-test-drives&utm_campaign=Badge_Coverage)
+[![Coverage Status](https://coveralls.io/repos/github/jesperancinha/spring-master-test-drives/badge.svg?branch=main)](https://coveralls.io/github/jesperancinha/spring-master-test-drives?branch=master)
+[![codecov](https://codecov.io/gh/jesperancinha/spring-master-test-drives/branch/main/graph/badge.svg?token=2Eh0Oh5ro2)](https://codecov.io/gh/jesperancinha/spring-master-test-drives)
 
-![GitHub language count](https://img.shields.io/github/languages/count/jesperancinha/jeorg-spring-master-test-drives.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/jesperancinha/jeorg-spring-master-test-drives.svg)
-![GitHub top language](https://img.shields.io/github/languages/code-size/jesperancinha/jeorg-spring-master-test-drives.svg)
+![GitHub language count](https://img.shields.io/github/languages/count/jesperancinha/spring-master-test-drives.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/jesperancinha/spring-master-test-drives.svg)
+![GitHub top language](https://img.shields.io/github/languages/code-size/jesperancinha/spring-master-test-drives.svg)
 
 ---
 
@@ -34,8 +34,8 @@ Study Project for the Spring Framework. For more info check the [LogBook](./LogB
 
 #### Stable releases
 
--   [1.0.0](https://github.com/jesperancinha/jeorg-spring-master-test-drives/tree/1.0.0) - [960c0dbfbe9aef8c11c432c2c380814acf409b37](https://github.com/jesperancinha/jeorg-spring-master-test-drives/tree/1.0.0) - Spring boot 2.7.5
--   [2.0.0](https://github.com/jesperancinha/jeorg-spring-master-test-drives/tree/2.0.0) - [efe08c01f3e67dcb9d18707c9cc662c8ece4bfbc](https://github.com/jesperancinha/jeorg-spring-master-test-drives/tree/2.0.0) - Spring boot 3.0.0
+-   [1.0.0](https://github.com/jesperancinha/spring-master-test-drives/tree/1.0.0) - [960c0dbfbe9aef8c11c432c2c380814acf409b37](https://github.com/jesperancinha/spring-master-test-drives/tree/1.0.0) - Spring boot 2.7.5
+-   [2.0.0](https://github.com/jesperancinha/spring-master-test-drives/tree/2.0.0) - [efe08c01f3e67dcb9d18707c9cc662c8ece4bfbc](https://github.com/jesperancinha/spring-master-test-drives/tree/2.0.0) - Spring boot 3.0.0
 
 ## Specs
 

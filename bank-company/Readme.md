@@ -282,8 +282,8 @@ Running our Spring Boot application, we'll see that our actuator located at http
     },
     "commit": {
       "message": {
-        "short": "\uD83C\uDF31 jeorg-spring-master-test-drives - \uD83C\uDFE6 - BankCompany - app and build for the Info actuator",
-        "full": "\uD83C\uDF31 jeorg-spring-master-test-drives - \uD83C\uDFE6 - BankCompany - app and build for the Info actuator"
+        "short": "\uD83C\uDF31 spring-master-test-drives - \uD83C\uDFE6 - BankCompany - app and build for the Info actuator",
+        "full": "\uD83C\uDF31 spring-master-test-drives - \uD83C\uDFE6 - BankCompany - app and build for the Info actuator"
       },
       "user": {
         "name": "Joao Esperancinha",

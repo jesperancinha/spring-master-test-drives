@@ -75,7 +75,7 @@ These badges should only be part of root `Readme.md` files. They should also be 
 4. ![GitHub License]()]()
 5. ![CircleCI]()]()
 6. ![Build status]()]()
-7. ![jeorg-spring-master-test-drives](https://github.com/jesperancinha/jeorg-spring-master-test-drives/actions/workflows/jeorg-spring-master-test-drives.yml/badge.svg)](https://github.com/jesperancinha/jeorg-spring-master-test-drives/actions/workflows/jeorg-spring-master-test-drives.yml)
+7. ![spring-master-test-drives](https://github.com/jesperancinha/spring-master-test-drives/actions/workflows/spring-master-test-drives.yml/badge.svg)](https://github.com/jesperancinha/spring-master-test-drives/actions/workflows/spring-master-test-drives.yml)
 8. ![Codacy Badge]()]()
 9. ![codebeat badge]()]()
 10. ![BCH compliance]()]()

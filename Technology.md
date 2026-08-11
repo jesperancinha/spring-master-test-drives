@@ -162,4 +162,4 @@
 
 ---
 
-[Back](./README.md)  | [Reminders](dev/src/jofisaes/jeorg-spring-master-test-drives/docs/reminders/Reminders.md) | [Spring Boot](dev/src/jofisaes/jeorg-spring-master-test-drives/docs/reminders/SpringBoot.md)
+[Back](./README.md)  | [Reminders](dev/src/jofisaes/spring-master-test-drives/docs/reminders/Reminders.md) | [Spring Boot](dev/src/jofisaes/spring-master-test-drives/docs/reminders/SpringBoot.md)

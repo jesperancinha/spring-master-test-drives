@@ -4,7 +4,7 @@
 
 ---
 
-## [Car Parts](https://github.com/jesperancinha/jeorg-spring-master-test-drives/tree/main/car-parts)
+## [Car Parts](https://github.com/jesperancinha/spring-master-test-drives/tree/main/car-parts)
 
 ### Goal 1 - Deployment with embedded Jetty Server
 
@@ -474,7 +474,7 @@ Essentially, the point is that JAX-RS is specifically made to be used with JEE. 
 
 ---
 
-## [Furniture K Shop](https://github.com/jesperancinha/jeorg-spring-master-test-drives/tree/main/furniture-k-shop)
+## [Furniture K Shop](https://github.com/jesperancinha/spring-master-test-drives/tree/main/furniture-k-shop)
 
 ### Goal 1 - Transactional inner methods call
 
