@@ -2,9 +2,9 @@
 
 <ins>2021/05/22</ins>
 
-Welcome to [JEOrg Spring Master Test Drives](https://github.com/jesperancinha/spring-master-test-drives).   
-In these series we will only have master projects available. We won't be looking at the basics of Spring 5.   
-That will still occur in my other repo: [JEOrg Spring 5 Test Drives](https://github.com/jesperancinha/jeorg-spring-5-test-drives).
+Welcome to [Spring Master Test Drives](https://github.com/jesperancinha/spring-master-test-drives).   
+In these series we will only have master projects available. We won't be looking at the basics of Spring.   
+That will still occur in my other repo: [Spring Test Drives](https://github.com/jesperancinha/spring-test-drives).
 
 The setting in this repo is essentially about details.   
 So for example if we are looking at a `@Transactional` annotation, we won't just be looking at what a `@Transactional` does.   
